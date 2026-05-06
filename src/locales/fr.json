@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "Langue" },
+  "pay": {
+    "loading": "Chargement des détails du paiement…",
+    "title": "Finalisez votre paiement",
+    "step1": "Allez sur <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, cliquez sur le bouton \"BTC\" et choisissez <strong>USDC BASE</strong>.",
+    "step2": "Tapez ensuite <strong>{amount}</strong>, le montant que vous devez, dans la case \"You get\" <strong>USDC</strong>.",
+    "step3": "Lorsqu'on vous demande l'adresse du portefeuille <strong>USDC BASE</strong>, collez celle ci-dessous :",
+    "step4": "Assurez-vous de sélectionner « Je n'ai pas besoin de Boost Points ».",
+    "wallet_label": "Adresse du portefeuille USDC BASE",
+    "copy_button": "Copier",
+    "copy_success": "Adresse Base copiée avec succès !",
+    "return_button": "Retour au paiement",
+    "success_title": "Paiement reçu",
+    "success_msg": "Vous pouvez maintenant fermer cet onglet.",
+    "expired_title": "Session expirée",
+    "expired_msg": "Cette session de paiement n'est plus active. Veuillez en démarrer une nouvelle.",
+    "notfound_title": "Commande introuvable",
+    "notfound_msg": "Ce lien est invalide ou a expiré.",
+    "close_hint_title": "Vous pouvez fermer cet onglet",
+    "close_hint_msg": "Retournez à l'onglet précédent pour poursuivre le paiement."
+  },
+  "footer": {
+    "disclaimer": "Ce site n'est pas affilié à Mercuryo.",
+    "entity": "Vexutopia"
+  }
+}

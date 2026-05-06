@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "اللغة" },
+  "pay": {
+    "loading": "جارٍ تحميل تفاصيل الدفع…",
+    "title": "أكمل عملية الدفع",
+    "step1": "انتقل إلى <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>، انقر على زر \"BTC\" واختر <strong>USDC BASE</strong>.",
+    "step2": "ثم اكتب <strong>{amount}</strong>، المبلغ المستحق عليك، في مربع \"You get\" <strong>USDC</strong>.",
+    "step3": "عند مطالبتك بعنوان محفظة <strong>USDC BASE</strong>، الصق العنوان أدناه:",
+    "step4": "تأكد من تحديد \"لست بحاجة إلى Boost Points\".",
+    "wallet_label": "عنوان محفظة USDC BASE",
+    "copy_button": "نسخ",
+    "copy_success": "تم نسخ عنوان Base بنجاح!",
+    "return_button": "العودة إلى الدفع",
+    "success_title": "تم استلام الدفع",
+    "success_msg": "يمكنك الآن إغلاق هذه التبويب.",
+    "expired_title": "انتهت الجلسة",
+    "expired_msg": "لم تعد جلسة الدفع هذه نشطة. يرجى بدء جلسة جديدة.",
+    "notfound_title": "لم يتم العثور على الطلب",
+    "notfound_msg": "هذا الرابط غير صالح أو منتهي الصلاحية.",
+    "close_hint_title": "يمكنك إغلاق هذه التبويب",
+    "close_hint_msg": "ارجع إلى التبويب السابق لمتابعة الدفع."
+  },
+  "footer": {
+    "disclaimer": "هذا الموقع غير تابع لـ Mercuryo.",
+    "entity": "Vexutopia"
+  }
+}

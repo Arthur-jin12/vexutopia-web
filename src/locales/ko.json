@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "언어" },
+  "pay": {
+    "loading": "결제 정보를 불러오는 중…",
+    "title": "결제를 완료해 주세요",
+    "step1": "<a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>로 이동하여 \"BTC\" 버튼을 클릭하고 <strong>USDC BASE</strong>를 선택하세요.",
+    "step2": "그런 다음 \"You get\" <strong>USDC</strong> 상자에 지불해야 할 금액인 <strong>{amount}</strong>를 입력하세요.",
+    "step3": "<strong>USDC BASE</strong> 지갑 주소를 입력하라는 메시지가 나타나면 아래 주소를 붙여넣으세요:",
+    "step4": "\"Boost Points가 필요하지 않습니다\"를 선택했는지 확인하세요.",
+    "wallet_label": "USDC BASE 지갑 주소",
+    "copy_button": "복사",
+    "copy_success": "Base 주소가 성공적으로 복사되었습니다!",
+    "return_button": "결제로 돌아가기",
+    "success_title": "결제 완료",
+    "success_msg": "이제 이 탭을 닫으셔도 됩니다.",
+    "expired_title": "세션이 만료되었습니다",
+    "expired_msg": "이 결제 세션은 더 이상 유효하지 않습니다. 새 세션을 시작해 주세요.",
+    "notfound_title": "주문을 찾을 수 없습니다",
+    "notfound_msg": "이 링크는 유효하지 않거나 만료되었습니다.",
+    "close_hint_title": "이 탭을 닫으셔도 됩니다",
+    "close_hint_msg": "이전 탭으로 돌아가 결제를 계속하세요."
+  },
+  "footer": {
+    "disclaimer": "본 사이트는 Mercuryo와 무관합니다.",
+    "entity": "Vexutopia"
+  }
+}

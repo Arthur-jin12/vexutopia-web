@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "language": "Language"
+  },
+  "pay": {
+    "loading": "Loading checkout details…",
+    "title": "Complete your payment",
+    "step1": "Go to <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, click on the \"BTC\" button and choose <strong>USDC BASE</strong>.",
+    "step2": "Then type <strong>{amount}</strong>, the amount you owe, in the \"You get\" <strong>USDC</strong> box.",
+    "step3": "When prompted for the <strong>USDC BASE</strong> wallet address, paste the one below:",
+    "step4": "Make sure to select \"I don't need Boost Points.\"",
+    "wallet_label": "USDC BASE wallet address",
+    "copy_button": "Copy",
+    "copy_success": "Base Address successfully copied!",
+    "return_button": "Return to checkout",
+    "success_title": "Payment received",
+    "success_msg": "You can close this tab now.",
+    "expired_title": "Session expired",
+    "expired_msg": "This payment session is no longer active. Please start a new one.",
+    "notfound_title": "Order not found",
+    "notfound_msg": "This link is invalid or has expired.",
+    "close_hint_title": "You can close this tab",
+    "close_hint_msg": "Return to the previous tab to continue with checkout."
+  },
+  "footer": {
+    "disclaimer": "This site is not affiliated with Mercuryo.",
+    "entity": "Vexutopia"
+  }
+}

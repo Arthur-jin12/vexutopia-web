@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "Ngôn ngữ" },
+  "pay": {
+    "loading": "Đang tải thông tin thanh toán…",
+    "title": "Hoàn tất thanh toán",
+    "step1": "Truy cập <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, nhấp vào nút \"BTC\" và chọn <strong>USDC BASE</strong>.",
+    "step2": "Sau đó nhập <strong>{amount}</strong>, số tiền bạn nợ, vào ô \"You get\" <strong>USDC</strong>.",
+    "step3": "Khi được yêu cầu địa chỉ ví <strong>USDC BASE</strong>, hãy dán địa chỉ bên dưới:",
+    "step4": "Đảm bảo chọn \"Tôi không cần Boost Points\".",
+    "wallet_label": "Địa chỉ ví USDC BASE",
+    "copy_button": "Sao chép",
+    "copy_success": "Đã sao chép địa chỉ Base thành công!",
+    "return_button": "Quay lại thanh toán",
+    "success_title": "Đã nhận thanh toán",
+    "success_msg": "Bây giờ bạn có thể đóng tab này.",
+    "expired_title": "Phiên đã kết thúc",
+    "expired_msg": "Phiên thanh toán này không còn hoạt động. Vui lòng bắt đầu phiên mới.",
+    "notfound_title": "Không tìm thấy đơn hàng",
+    "notfound_msg": "Liên kết này không hợp lệ hoặc đã hết hạn.",
+    "close_hint_title": "Bạn có thể đóng tab này",
+    "close_hint_msg": "Quay lại tab trước để tiếp tục thanh toán."
+  },
+  "footer": {
+    "disclaimer": "Trang web này không liên kết với Mercuryo.",
+    "entity": "Vexutopia"
+  }
+}

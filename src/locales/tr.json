@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "Dil" },
+  "pay": {
+    "loading": "Ödeme bilgileri yükleniyor…",
+    "title": "Ödemenizi tamamlayın",
+    "step1": "<a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>'ya gidin, \"BTC\" düğmesine tıklayın ve <strong>USDC BASE</strong>'i seçin.",
+    "step2": "Ardından \"You get\" <strong>USDC</strong> kutusuna borçlu olduğunuz tutar olan <strong>{amount}</strong> yazın.",
+    "step3": "<strong>USDC BASE</strong> cüzdan adresi istendiğinde, aşağıdakini yapıştırın:",
+    "step4": "\"Boost Points'e ihtiyacım yok\" seçeneğini seçtiğinizden emin olun.",
+    "wallet_label": "USDC BASE cüzdan adresi",
+    "copy_button": "Kopyala",
+    "copy_success": "Base adresi başarıyla kopyalandı!",
+    "return_button": "Ödemeye dön",
+    "success_title": "Ödeme alındı",
+    "success_msg": "Artık bu sekmeyi kapatabilirsiniz.",
+    "expired_title": "Oturum sona erdi",
+    "expired_msg": "Bu ödeme oturumu artık aktif değil. Lütfen yenisini başlatın.",
+    "notfound_title": "Sipariş bulunamadı",
+    "notfound_msg": "Bu bağlantı geçersiz veya süresi dolmuş.",
+    "close_hint_title": "Bu sekmeyi kapatabilirsiniz",
+    "close_hint_msg": "Ödemeye devam etmek için önceki sekmeye dönün."
+  },
+  "footer": {
+    "disclaimer": "Bu site Mercuryo ile bağlantılı değildir.",
+    "entity": "Vexutopia"
+  }
+}

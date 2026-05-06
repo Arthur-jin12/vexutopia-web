@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "Nyelv" },
+  "pay": {
+    "loading": "Fizetési adatok betöltése…",
+    "title": "Fizetés véglegesítése",
+    "step1": "Lépjen a <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a> oldalra, kattintson a \"BTC\" gombra, és válassza az <strong>USDC BASE</strong>-t.",
+    "step2": "Ezután írja be az \"You get\" <strong>USDC</strong> mezőbe a <strong>{amount}</strong> összeget, amellyel tartozik.",
+    "step3": "Amikor az <strong>USDC BASE</strong> pénztárca címét kérik, illessze be az alábbi címet:",
+    "step4": "Mindenképp válassza a „Nincs szükségem Boost Pointsra” lehetőséget.",
+    "wallet_label": "USDC BASE pénztárca címe",
+    "copy_button": "Másolás",
+    "copy_success": "Base cím sikeresen másolva!",
+    "return_button": "Vissza a fizetéshez",
+    "success_title": "Fizetés megérkezett",
+    "success_msg": "Most már bezárhatod ezt a fület.",
+    "expired_title": "A munkamenet lejárt",
+    "expired_msg": "Ez a fizetési munkamenet már nem aktív. Kérjük, kezdj újat.",
+    "notfound_title": "Rendelés nem található",
+    "notfound_msg": "Ez a link érvénytelen vagy lejárt.",
+    "close_hint_title": "Bezárhatod ezt a fület",
+    "close_hint_msg": "Térj vissza az előző fülre, hogy folytasd a fizetést."
+  },
+  "footer": {
+    "disclaimer": "Ez az oldal nem áll kapcsolatban a Mercuryo-val.",
+    "entity": "Vexutopia"
+  }
+}

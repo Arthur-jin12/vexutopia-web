@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "言語" },
+  "pay": {
+    "loading": "お支払い情報を読み込んでいます…",
+    "title": "お支払いの完了",
+    "step1": "<a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>にアクセスし、「BTC」ボタンをクリックして<strong>USDC BASE</strong>を選択してください。",
+    "step2": "次に「You get」の<strong>USDC</strong>ボックスに、お支払い金額の<strong>{amount}</strong>を入力してください。",
+    "step3": "<strong>USDC BASE</strong>ウォレットアドレスを求められたら、以下のアドレスを貼り付けてください：",
+    "step4": "必ず「Boost Points は必要ありません」を選択してください。",
+    "wallet_label": "USDC BASE ウォレットアドレス",
+    "copy_button": "コピー",
+    "copy_success": "Baseアドレスが正常にコピーされました！",
+    "return_button": "チェックアウトに戻る",
+    "success_title": "お支払いを受け付けました",
+    "success_msg": "このタブを閉じてかまいません。",
+    "expired_title": "セッションが終了しました",
+    "expired_msg": "このお支払いセッションは無効になりました。新しく開始してください。",
+    "notfound_title": "注文が見つかりません",
+    "notfound_msg": "このリンクは無効または期限切れです。",
+    "close_hint_title": "このタブを閉じてください",
+    "close_hint_msg": "前のタブに戻って手続きを続けてください。"
+  },
+  "footer": {
+    "disclaimer": "本サイトは Mercuryo と提携していません。",
+    "entity": "Vexutopia"
+  }
+}

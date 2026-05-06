@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "language": "语言"
+  },
+  "pay": {
+    "loading": "正在加载支付信息…",
+    "title": "完成支付",
+    "step1": "前往 <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>，点击\"BTC\"按钮并选择 <strong>USDC BASE</strong>。",
+    "step2": "然后在\"You get\" <strong>USDC</strong> 框中输入 <strong>{amount}</strong>，即您所欠的金额。",
+    "step3": "当提示输入 <strong>USDC BASE</strong> 钱包地址时，请粘贴以下地址：",
+    "step4": "请确保选择 \"我不需要 Boost Points\"。",
+    "wallet_label": "USDC BASE 钱包地址",
+    "copy_button": "复制",
+    "copy_success": "Base 地址已成功复制！",
+    "return_button": "返回结算页",
+    "success_title": "已收到付款",
+    "success_msg": "您现在可以关闭此标签页。",
+    "expired_title": "会话已结束",
+    "expired_msg": "本次支付会话已失效，请重新发起。",
+    "notfound_title": "订单不存在",
+    "notfound_msg": "此链接无效或已过期。",
+    "close_hint_title": "您可以关闭此标签页",
+    "close_hint_msg": "请返回上一个标签页继续结算。"
+  },
+  "footer": {
+    "disclaimer": "本站与 Mercuryo 无关联。",
+    "entity": "Vexutopia"
+  }
+}

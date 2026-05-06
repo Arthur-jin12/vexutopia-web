@@ -1,0 +1,27 @@
+{
+  "nav": { "language": "Limbă" },
+  "pay": {
+    "loading": "Se încarcă detaliile plății…",
+    "title": "Finalizează plata",
+    "step1": "Accesați <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, faceți clic pe butonul \"BTC\" și alegeți <strong>USDC BASE</strong>.",
+    "step2": "Apoi tastați <strong>{amount}</strong>, suma pe care o datorați, în caseta \"You get\" <strong>USDC</strong>.",
+    "step3": "Când vi se solicită adresa portofelului <strong>USDC BASE</strong>, lipiți-o pe cea de mai jos:",
+    "step4": "Asigurați-vă că selectați \"Nu am nevoie de Boost Points\".",
+    "wallet_label": "Adresa portofelului USDC BASE",
+    "copy_button": "Copiază",
+    "copy_success": "Adresa Base copiată cu succes!",
+    "return_button": "Înapoi la plată",
+    "success_title": "Plată primită",
+    "success_msg": "Poți închide această filă acum.",
+    "expired_title": "Sesiunea a expirat",
+    "expired_msg": "Această sesiune de plată nu mai este activă. Te rugăm să începi una nouă.",
+    "notfound_title": "Comandă negăsită",
+    "notfound_msg": "Acest link este invalid sau a expirat.",
+    "close_hint_title": "Poți închide această filă",
+    "close_hint_msg": "Întoarce-te la fila anterioară pentru a continua plata."
+  },
+  "footer": {
+    "disclaimer": "Acest site nu este afiliat cu Mercuryo.",
+    "entity": "Vexutopia"
+  }
+}
