@@ -41,7 +41,7 @@ onUnmounted(() => mql?.removeEventListener('change', onMqlChange));
 
 const displayAddress = computed(() => {
   if (isMobile.value && props.address.length > 20) {
-    return props.address.slice(0, 8) + ' **** ' + props.address.slice(-8);
+    return props.address.slice(0, 6) + ' ** ' + props.address.slice(-6);
   }
   return props.address;
 });
