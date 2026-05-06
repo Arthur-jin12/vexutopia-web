@@ -1,7 +1,54 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite';
+import { generateJSON } from '@intlify/bundle-utils';
 import { fileURLToPath, URL } from 'node:url';
+import { readFileSync } from 'node:fs';
+import { resolve, dirname, isAbsolute } from 'node:path';
+
+// Virtual ID prefix — the \0 tells Rollup this is a virtual module.
+// Because it no longer ends in .json, vite:json skips it entirely.
+const I18N_PREFIX = '\0i18n-locale:';
+
+/**
+ * Pre-compiles locale JSON files to JS message functions at build time.
+ * Uses resolveId+load (virtual module) so vite:json never processes these
+ * files — otherwise vite:json would receive our JS output and crash trying
+ * to JSON.parse it.
+ */
+function i18nPrecompile() {
+  return {
+    name: 'i18n-precompile',
+    enforce: 'pre',
+
+    resolveId(id, importer) {
+      if (!/locales[/\\][^/\\]+\.json$/.test(id)) return;
+      const filePath = isAbsolute(id)
+        ? id
+        : importer
+          ? resolve(dirname(importer.split('?')[0]), id)
+          : null;
+      if (!filePath) return;
+      // Strip .json so vite:json's /\.(json|json5)$/ regex never matches this ID.
+      return I18N_PREFIX + filePath.replace(/\.json$/, '');
+    },
+
+    load(id) {
+      if (!id.startsWith(I18N_PREFIX)) return;
+      const filePath = id.slice(I18N_PREFIX.length) + '.json';
+      this.addWatchFile(filePath);
+      const raw = readFileSync(filePath, 'utf-8');
+      const isProd = process.env.NODE_ENV === 'production';
+      const { code } = generateJSON(raw, {
+        type: 'plain',
+        jit: false,
+        strictMessage: false,
+        escapeHtml: false,
+        env: isProd ? 'production' : 'development',
+      });
+      return { code, map: { mappings: '' } };
+    },
+  };
+}
 
 /**
  * Dev-only plugin: intercepts POST /api/order so the Vue app works without
@@ -67,13 +114,7 @@ function mockOrderApi() {
 export default defineConfig({
   plugins: [
     vue(),
-    VueI18nPlugin({
-      include: [fileURLToPath(new URL('./src/locales/*.json', import.meta.url))],
-      strictMessage: false,
-      escapeHtml: false,
-      runtimeOnly: true,
-      dropMessageCompiler: true,
-    }),
+    i18nPrecompile(),
     mockOrderApi(),
   ],
   resolve: {
