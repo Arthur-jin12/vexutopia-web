@@ -9,9 +9,12 @@
         :class="{ 'copy-btn--ok': copied }"
         @click="copy"
       >
-        {{ copied ? t('pay.copy_success') : t('pay.copy_button') }}
+        {{ copied ? '✓' : t('pay.copy_button') }}
       </button>
     </div>
+    <transition name="toast">
+      <p v-if="copied" class="copy-toast">{{ t('pay.copy_success') }}</p>
+    </transition>
   </div>
 </template>
 
@@ -49,7 +52,6 @@ async function copy() {
     copied.value = true;
     setTimeout(() => { copied.value = false; }, 1500);
   } catch (_) {
-    // Fallback for non-secure contexts: select + execCommand
     const tmp = document.createElement('input');
     tmp.value = props.address;
     document.body.appendChild(tmp);
@@ -96,8 +98,7 @@ async function copy() {
 }
 .wallet-address:hover { background: var(--bg-soft); }
 .copy-btn {
-  flex: 0 0 auto;
-  padding: 0 30px;
+  flex: 0 0 88px;
   border: none;
   border-left: 1px solid var(--line);
   background: var(--bg-soft);
@@ -106,12 +107,28 @@ async function copy() {
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
-  transition: background 0.12s;
+  transition: background 0.12s, color 0.12s;
+  border-radius: 0 8px 8px 0;
 }
 .copy-btn:hover { background: var(--line); }
 .copy-btn--ok {
   background: var(--accent);
   color: #fff;
+}
+.copy-toast {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--accent);
+  font-weight: 500;
+  text-align: center;
+}
+.toast-enter-active,
+.toast-leave-active {
+  transition: opacity 0.2s ease;
+}
+.toast-enter-from,
+.toast-leave-to {
+  opacity: 0;
 }
 
 @media (max-width: 640px) {
@@ -126,7 +143,7 @@ async function copy() {
     overflow-x: visible;
   }
   .copy-btn {
-    padding: 0 22px;
+    flex: 0 0 72px;
     font-size: 16px;
   }
 }
