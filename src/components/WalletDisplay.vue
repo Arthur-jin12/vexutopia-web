@@ -2,7 +2,7 @@
   <div class="wallet">
     <div class="wallet-label">{{ t('pay.wallet_label') }}</div>
     <div class="wallet-row">
-      <code class="wallet-address" :title="address">{{ address }}</code>
+      <code class="wallet-address" :title="address" @click="copy">{{ address }}</code>
       <button
         type="button"
         class="copy-btn"
@@ -65,6 +65,7 @@ async function copy() {
 }
 .wallet-address {
   flex: 1;
+  min-width: 0;
   font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 21px;
   font-weight: 700;
@@ -73,7 +74,9 @@ async function copy() {
   overflow-x: auto;
   text-align: center;
   color: #000;
+  cursor: pointer;
 }
+.wallet-address:hover { background: var(--bg-soft); }
 .copy-btn {
   flex: 0 0 auto;
   padding: 0 30px;
