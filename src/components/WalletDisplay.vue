@@ -96,7 +96,6 @@ async function copy() {
   color: #000;
   cursor: pointer;
 }
-.wallet-address:hover { background: var(--bg-soft); }
 .copy-btn {
   flex: 0 0 88px;
   border: none;
