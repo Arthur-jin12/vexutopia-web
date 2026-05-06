@@ -111,15 +111,15 @@ const step3Html = computed(() => markBold(t('pay.step3')));
 
 @media (max-width: 640px) {
   .step {
-    gap: 16px;
-    padding: 20px 0;
+    gap: 10px;
+    padding: 18px 0;
   }
   .step-marker {
-    flex: 0 0 28px;
-    font-size: 18px;
+    flex: 0 0 22px;
+    font-size: 17px;
   }
   .step-body {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
