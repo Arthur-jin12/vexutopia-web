@@ -101,7 +101,8 @@ const props = defineProps({
 
 const { t } = useI18n();
 const route = useRoute();
-const { loading, data, error } = useOrderStatus(props.token);
+const sandboxEnv = route.query.env === 'sandbox' ? 'sandbox' : undefined;
+const { loading, data, error } = useOrderStatus(props.token, sandboxEnv);
 
 // "Tab cannot self-close" fallback hint
 const showCloseHint = ref(false);

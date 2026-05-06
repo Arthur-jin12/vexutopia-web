@@ -10,7 +10,7 @@ import { ref, onMounted } from 'vue';
  *   data:    { amount_owed, wallet_address, order_status } | null
  *   error:   'not_found' | 'network' | null
  */
-export function useOrderStatus(token) {
+export function useOrderStatus(token, env) {
   const loading = ref(true);
   const data = ref(null);
   const error = ref(null);
@@ -24,7 +24,7 @@ export function useOrderStatus(token) {
         cache: 'no-store',
         credentials: 'omit',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ token }),
+        body: JSON.stringify(env === 'sandbox' ? { token, env } : { token }),
       });
       if (r.status === 404) {
         error.value = 'not_found';

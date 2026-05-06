@@ -31,9 +31,13 @@ export const onRequestPost = async (context) => {
   if (!/^[A-Za-z0-9_\-=]+$/.test(token)) {
     return new Response('Bad Request', { status: 400 });
   }
+  const envParam = body.env;
+  if (envParam !== undefined && envParam !== 'sandbox') {
+    return new Response('Bad Request', { status: 400 });
+  }
 
   // 3. Read upstream secrets from environment (set in Pages dashboard)
-  const isSandbox = url.hostname === 'sandbox.luxfintech.org';
+  const isSandbox = envParam === 'sandbox';
   const upstreamUrl = isSandbox ? env.UPSTREAM_URL_SANDBOX : env.UPSTREAM_URL;
   const upstreamSecret = env.UPSTREAM_SECRET;
   if (!upstreamUrl || !upstreamSecret) {
