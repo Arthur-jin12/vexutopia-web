@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "언어" },
   "pay": {
     "loading": "결제 정보를 불러오는 중…",
     "title": "결제를 완료해 주세요",
-    "step1": "<a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>로 이동하여 \"BTC\" 버튼을 클릭하고 <strong>USDC BASE</strong>를 선택하세요.",
-    "step2": "그런 다음 \"You get\" <strong>USDC</strong> 상자에 지불해야 할 금액인 <strong>{amount}</strong>를 입력하세요.",
-    "step3": "<strong>USDC BASE</strong> 지갑 주소를 입력하라는 메시지가 나타나면 아래 주소를 붙여넣으세요:",
+    "step1": "{mercuryo}로 이동하여 \"BTC\" 버튼을 클릭하고 USDC BASE를 선택하세요.",
+    "step2": "그런 다음 \"You get\" USDC 상자에 지불해야 할 금액인 {amount}를 입력하세요.",
+    "step3": "USDC BASE 지갑 주소를 입력하라는 메시지가 나타나면 아래 주소를 붙여넣으세요:",
     "step4": "\"Boost Points가 필요하지 않습니다\"를 선택했는지 확인하세요.",
     "wallet_label": "USDC BASE 지갑 주소",
     "copy_button": "복사",

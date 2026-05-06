@@ -2,22 +2,28 @@
   <ol class="steps" :data-amount="amount">
     <li class="step">
       <span class="step-marker">1</span>
-      <span class="step-body" v-html="t('pay.step1', { amount: amountStr })" />
+      <i18n-t keypath="pay.step1" tag="span" class="step-body">
+        <template #mercuryo>
+          <a href="https://exchange.mercuryo.io" target="_blank" rel="noopener noreferrer">Mercuryo</a>
+        </template>
+      </i18n-t>
     </li>
     <li class="step">
       <span class="step-marker">2</span>
-      <span class="step-body" v-html="t('pay.step2', { amount: amountStr })" />
+      <i18n-t keypath="pay.step2" tag="span" class="step-body">
+        <template #amount><strong>{{ amountStr }}</strong></template>
+      </i18n-t>
     </li>
     <li class="step">
       <span class="step-marker">3</span>
       <div class="step-body">
-        <p class="step-prompt" v-html="t('pay.step3')" />
+        <p class="step-prompt">{{ t('pay.step3') }}</p>
         <slot name="step3-extra" />
       </div>
     </li>
     <li class="step">
       <span class="step-marker">4</span>
-      <span class="step-body" v-html="t('pay.step4')" />
+      <span class="step-body">{{ t('pay.step4') }}</span>
     </li>
   </ol>
 </template>

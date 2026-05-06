@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "Limbă" },
   "pay": {
     "loading": "Se încarcă detaliile plății…",
     "title": "Finalizează plata",
-    "step1": "Accesați <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, faceți clic pe butonul \"BTC\" și alegeți <strong>USDC BASE</strong>.",
-    "step2": "Apoi tastați <strong>{amount}</strong>, suma pe care o datorați, în caseta \"You get\" <strong>USDC</strong>.",
-    "step3": "Când vi se solicită adresa portofelului <strong>USDC BASE</strong>, lipiți-o pe cea de mai jos:",
+    "step1": "Accesați {mercuryo}, faceți clic pe butonul \"BTC\" și alegeți USDC BASE.",
+    "step2": "Apoi tastați {amount}, suma pe care o datorați, în caseta \"You get\" USDC.",
+    "step3": "Când vi se solicită adresa portofelului USDC BASE, lipiți-o pe cea de mai jos:",
     "step4": "Asigurați-vă că selectați \"Nu am nevoie de Boost Points\".",
     "wallet_label": "Adresa portofelului USDC BASE",
     "copy_button": "Copiază",

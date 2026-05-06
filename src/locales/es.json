@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "Idioma" },
   "pay": {
     "loading": "Cargando los detalles del pago…",
     "title": "Completa tu pago",
-    "step1": "Vaya a <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, haga clic en el botón \"BTC\" y elija <strong>USDC BASE</strong>.",
-    "step2": "Luego escriba <strong>{amount}</strong>, la cantidad que debe, en el cuadro \"You get\" <strong>USDC</strong>.",
-    "step3": "Cuando se le solicite la dirección de la billetera <strong>USDC BASE</strong>, pegue la siguiente:",
+    "step1": "Vaya a {mercuryo}, haga clic en el botón \"BTC\" y elija USDC BASE.",
+    "step2": "Luego escriba {amount}, la cantidad que debe, en el cuadro \"You get\" USDC.",
+    "step3": "Cuando se le solicite la dirección de la billetera USDC BASE, pegue la siguiente:",
     "step4": "Asegúrese de seleccionar \"No necesito Boost Points\".",
     "wallet_label": "Dirección de la billetera USDC BASE",
     "copy_button": "Copiar",

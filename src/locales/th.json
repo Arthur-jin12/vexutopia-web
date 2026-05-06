@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "ภาษา" },
   "pay": {
     "loading": "กำลังโหลดรายละเอียดการชำระเงิน…",
     "title": "ชำระเงินให้เสร็จสมบูรณ์",
-    "step1": "ไปที่ <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a> คลิกปุ่ม \"BTC\" และเลือก <strong>USDC BASE</strong>",
-    "step2": "จากนั้นพิมพ์ <strong>{amount}</strong> จำนวนเงินที่คุณค้างชำระ ในช่อง \"You get\" <strong>USDC</strong>",
-    "step3": "เมื่อถูกถามที่อยู่กระเป๋าเงิน <strong>USDC BASE</strong> ให้วางที่อยู่ด้านล่าง:",
+    "step1": "ไปที่ {mercuryo} คลิกปุ่ม \"BTC\" และเลือก USDC BASE",
+    "step2": "จากนั้นพิมพ์ {amount} จำนวนเงินที่คุณค้างชำระ ในช่อง \"You get\" USDC",
+    "step3": "เมื่อถูกถามที่อยู่กระเป๋าเงิน USDC BASE ให้วางที่อยู่ด้านล่าง:",
     "step4": "ตรวจสอบให้แน่ใจว่าได้เลือก \"ฉันไม่ต้องการ Boost Points\"",
     "wallet_label": "ที่อยู่กระเป๋าเงิน USDC BASE",
     "copy_button": "คัดลอก",

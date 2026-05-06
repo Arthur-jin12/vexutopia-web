@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "Ngôn ngữ" },
   "pay": {
     "loading": "Đang tải thông tin thanh toán…",
     "title": "Hoàn tất thanh toán",
-    "step1": "Truy cập <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, nhấp vào nút \"BTC\" và chọn <strong>USDC BASE</strong>.",
-    "step2": "Sau đó nhập <strong>{amount}</strong>, số tiền bạn nợ, vào ô \"You get\" <strong>USDC</strong>.",
-    "step3": "Khi được yêu cầu địa chỉ ví <strong>USDC BASE</strong>, hãy dán địa chỉ bên dưới:",
+    "step1": "Truy cập {mercuryo}, nhấp vào nút \"BTC\" và chọn USDC BASE.",
+    "step2": "Sau đó nhập {amount}, số tiền bạn nợ, vào ô \"You get\" USDC.",
+    "step3": "Khi được yêu cầu địa chỉ ví USDC BASE, hãy dán địa chỉ bên dưới:",
     "step4": "Đảm bảo chọn \"Tôi không cần Boost Points\".",
     "wallet_label": "Địa chỉ ví USDC BASE",
     "copy_button": "Sao chép",

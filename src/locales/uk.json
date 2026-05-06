@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "Мова" },
   "pay": {
     "loading": "Завантаження деталей платежу…",
     "title": "Завершіть платіж",
-    "step1": "Перейдіть на <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, натисніть кнопку \"BTC\" та виберіть <strong>USDC BASE</strong>.",
-    "step2": "Потім введіть <strong>{amount}</strong>, суму вашого боргу, у поле \"You get\" <strong>USDC</strong>.",
-    "step3": "Коли з'явиться запит на адресу гаманця <strong>USDC BASE</strong>, вставте адресу нижче:",
+    "step1": "Перейдіть на {mercuryo}, натисніть кнопку \"BTC\" та виберіть USDC BASE.",
+    "step2": "Потім введіть {amount}, суму вашого боргу, у поле \"You get\" USDC.",
+    "step3": "Коли з'явиться запит на адресу гаманця USDC BASE, вставте адресу нижче:",
     "step4": "Обов'язково виберіть «Мені не потрібні Boost Points».",
     "wallet_label": "Адреса гаманця USDC BASE",
     "copy_button": "Копіювати",

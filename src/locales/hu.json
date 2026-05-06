@@ -1,11 +1,11 @@
-{
+﻿{
   "nav": { "language": "Nyelv" },
   "pay": {
     "loading": "Fizetési adatok betöltése…",
     "title": "Fizetés véglegesítése",
-    "step1": "Lépjen a <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a> oldalra, kattintson a \"BTC\" gombra, és válassza az <strong>USDC BASE</strong>-t.",
-    "step2": "Ezután írja be az \"You get\" <strong>USDC</strong> mezőbe a <strong>{amount}</strong> összeget, amellyel tartozik.",
-    "step3": "Amikor az <strong>USDC BASE</strong> pénztárca címét kérik, illessze be az alábbi címet:",
+    "step1": "Lépjen a {mercuryo} oldalra, kattintson a \"BTC\" gombra, és válassza az USDC BASE-t.",
+    "step2": "Ezután írja be az \"You get\" USDC mezőbe a {amount} összeget, amellyel tartozik.",
+    "step3": "Amikor az USDC BASE pénztárca címét kérik, illessze be az alábbi címet:",
     "step4": "Mindenképp válassza a „Nincs szükségem Boost Pointsra” lehetőséget.",
     "wallet_label": "USDC BASE pénztárca címe",
     "copy_button": "Másolás",

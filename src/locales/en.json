@@ -1,13 +1,13 @@
-{
+﻿{
   "nav": {
     "language": "Language"
   },
   "pay": {
     "loading": "Loading checkout details…",
     "title": "Complete your payment",
-    "step1": "Go to <a href=\"https://exchange.mercuryo.io\" target=\"_blank\" rel=\"noopener noreferrer\">Mercuryo</a>, click on the \"BTC\" button and choose <strong>USDC BASE</strong>.",
-    "step2": "Then type <strong>{amount}</strong>, the amount you owe, in the \"You get\" <strong>USDC</strong> box.",
-    "step3": "When prompted for the <strong>USDC BASE</strong> wallet address, paste the one below:",
+    "step1": "Go to {mercuryo}, click on the \"BTC\" button and choose USDC BASE.",
+    "step2": "Then type {amount}, the amount you owe, in the \"You get\" USDC box.",
+    "step3": "When prompted for the USDC BASE wallet address, paste the one below:",
     "step4": "Make sure to select \"I don't need Boost Points.\"",
     "wallet_label": "USDC BASE wallet address",
     "copy_button": "Copy",
