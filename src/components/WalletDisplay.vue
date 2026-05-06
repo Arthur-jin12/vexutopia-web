@@ -2,7 +2,7 @@
   <div class="wallet">
     <div class="wallet-label">{{ t('pay.wallet_label') }}</div>
     <div class="wallet-row">
-      <code class="wallet-address" :title="address" @click="copy">{{ address }}</code>
+      <code class="wallet-address" :title="address" @click="copy">{{ displayAddress }}</code>
       <button
         type="button"
         class="copy-btn"
@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const props = defineProps({
@@ -24,6 +24,24 @@ const props = defineProps({
 });
 const { t } = useI18n();
 const copied = ref(false);
+const isMobile = ref(false);
+
+let mql;
+function onMqlChange(e) { isMobile.value = e.matches; }
+
+onMounted(() => {
+  mql = window.matchMedia('(max-width: 640px)');
+  isMobile.value = mql.matches;
+  mql.addEventListener('change', onMqlChange);
+});
+onUnmounted(() => mql?.removeEventListener('change', onMqlChange));
+
+const displayAddress = computed(() => {
+  if (isMobile.value && props.address.length > 20) {
+    return props.address.slice(0, 8) + ' **** ' + props.address.slice(-8);
+  }
+  return props.address;
+});
 
 async function copy() {
   try {
@@ -104,6 +122,8 @@ async function copy() {
   .wallet-address {
     font-size: 17px;
     padding: 16px 18px;
+    white-space: normal;
+    overflow-x: visible;
   }
   .copy-btn {
     padding: 0 22px;
