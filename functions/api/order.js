@@ -33,7 +33,7 @@ export const onRequestPost = async (context) => {
   }
 
   // 3. Read upstream secrets from environment (set in Pages dashboard)
-  const isSandbox = url.hostname === 'sandbox.luxfuntech.org';
+  const isSandbox = url.hostname === 'sandbox.luxfintech.org';
   const upstreamUrl = isSandbox ? env.UPSTREAM_URL_SANDBOX : env.UPSTREAM_URL;
   const upstreamSecret = env.UPSTREAM_SECRET;
   if (!upstreamUrl || !upstreamSecret) {
