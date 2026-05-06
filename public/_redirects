@@ -1,4 +1,3 @@
-# SPA fallback: any unmatched route falls back to index.html so Vue Router
-# can take over. /api/* is handled by Pages Functions and isn't rewritten.
-/api/*  /api/:splat  200
-/*      /index.html  200
+# SPA fallback: any unmatched route serves index.html so Vue Router can handle it.
+# /api/* is handled by Pages Functions automatically and does not need a redirect rule.
+/*  /index.html  200

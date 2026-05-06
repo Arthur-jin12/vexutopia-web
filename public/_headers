@@ -7,8 +7,6 @@
   Content-Security-Policy: default-src 'self'; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
   Cross-Origin-Opener-Policy: same-origin
   X-Robots-Tag: noindex, nofollow
-  Server:
-  X-Powered-By:
 
 /api/*
   Cache-Control: no-store, no-cache, must-revalidate
