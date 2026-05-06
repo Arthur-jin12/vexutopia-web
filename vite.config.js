@@ -71,12 +71,15 @@ export default defineConfig({
       include: [fileURLToPath(new URL('./src/locales/*.json', import.meta.url))],
       strictMessage: false,
       escapeHtml: false,
+      runtimeOnly: true,
+      dropMessageCompiler: true,
     }),
     mockOrderApi(),
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
+      'vue-i18n': 'vue-i18n/dist/vue-i18n.runtime.esm-bundler.js',
     },
   },
   build: {
