@@ -6,7 +6,7 @@
     "step1": "انتقل إلى {mercuryo}، انقر على زر \"BTC\" واختر USDC BASE.",
     "step2": "ثم اكتب {amount}، المبلغ المستحق عليك، في مربع \"You get\" USDC.",
     "step3": "عند مطالبتك بعنوان محفظة USDC BASE، الصق العنوان أدناه:",
-    "step4": "تأكد من تحديد \"لست بحاجة إلى Boost Points\".",
+    "step4": "يجب عليك تحديد \"لست بحاجة إلى Boost Points\". وإلا، سيتم تحصيل رسوم منك.",
     "wallet_label": "عنوان محفظة USDC BASE",
     "copy_button": "نسخ",
     "copy_success": "تم نسخ عنوان Base بنجاح!",

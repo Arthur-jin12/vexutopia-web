@@ -60,7 +60,10 @@ export const onRequestPost = async (context) => {
     return new Response('Not Found', { status: 404 });
   }
   if (!upstreamResp.ok) {
-    return new Response('Not Found', { status: 404 });
+    return new Response('Not Found', {
+      status: 404,
+      headers: { 'X-Upstream': isSandbox ? 'sandbox' : 'production' },
+    });
   }
 
   let data;
@@ -86,6 +89,7 @@ export const onRequestPost = async (context) => {
       'Cache-Control': 'no-store, no-cache, must-revalidate',
       'Pragma': 'no-cache',
       'X-Content-Type-Options': 'nosniff',
+      'X-Upstream': isSandbox ? 'sandbox' : 'production',
     },
   });
 };

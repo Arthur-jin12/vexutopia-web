@@ -6,7 +6,7 @@
     "step1": "Vaya a {mercuryo}, haga clic en el botón \"BTC\" y elija USDC BASE.",
     "step2": "Luego escriba {amount}, la cantidad que debe, en el cuadro \"You get\" USDC.",
     "step3": "Cuando se le solicite la dirección de la billetera USDC BASE, pegue la siguiente:",
-    "step4": "Asegúrese de seleccionar \"No necesito Boost Points\".",
+    "step4": "Debe seleccionar \"No necesito Boost Points\". De lo contrario, se le cobrará una tarifa.",
     "wallet_label": "Dirección de la billetera USDC BASE",
     "copy_button": "Copiar",
     "copy_success": "¡Dirección Base copiada exitosamente!",

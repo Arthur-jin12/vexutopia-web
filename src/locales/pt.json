@@ -6,7 +6,7 @@
     "step1": "Acesse o {mercuryo}, clique no botão \"BTC\" e escolha USDC BASE.",
     "step2": "Em seguida, digite {amount}, o valor que você deve, na caixa \"You get\" USDC.",
     "step3": "Quando solicitado o endereço da carteira USDC BASE, cole o endereço abaixo:",
-    "step4": "Certifique-se de selecionar \"Não preciso de Boost Points\".",
+    "step4": "Você precisa selecionar \"Não preciso de Boost Points\". Caso contrário, será cobrada uma taxa.",
     "wallet_label": "Endereço da carteira USDC BASE",
     "copy_button": "Copiar",
     "copy_success": "Endereço Base copiado com sucesso!",
