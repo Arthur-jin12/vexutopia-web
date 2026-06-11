@@ -11,7 +11,7 @@
     "step4": "您必须选择 \"我不需要 Boost Points\"。否则，您将被收取费用。",
     "wallet_label": "USDC BASE 钱包地址",
     "copy_button": "复制 USDC BASE 地址",
-    "copy_success": "✅ 已复制！请将此地址粘贴到 USDC BASE 钱包地址栏中以完成支付。",
+    "copy_success": "✅ 已复制！请将其粘贴到钱包地址栏中以完成支付。",
     "return_button": "返回结算页",
     "success_title": "已收到付款",
     "success_msg": "您现在可以关闭此标签页。",
@@ -23,7 +23,6 @@
     "close_hint_msg": "请返回上一个标签页继续结算。"
   },
   "footer": {
-    "disclaimer": "本站与 Mercuryo 无关联。",
-    "entity": "Vexutopia"
+    "disclaimer": "本站与 Mercuryo 无关联。"
   }
 }

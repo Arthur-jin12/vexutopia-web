@@ -9,7 +9,7 @@
     "step4": "يجب عليك تحديد \"لست بحاجة إلى Boost Points\". وإلا، سيتم تحصيل رسوم منك.",
     "wallet_label": "عنوان محفظة USDC BASE",
     "copy_button": "نسخ عنوان USDC BASE",
-    "copy_success": "✅ تم النسخ! الصق هذا العنوان في حقل عنوان محفظة USDC BASE للدفع.",
+    "copy_success": "✅ تم النسخ! الصقه في حقل عنوان المحفظة للدفع.",
     "return_button": "العودة إلى الدفع",
     "success_title": "تم استلام الدفع",
     "success_msg": "يمكنك الآن إغلاق هذه التبويب.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "ارجع إلى التبويب السابق لمتابعة الدفع."
   },
   "footer": {
-    "disclaimer": "هذا الموقع غير تابع لـ Mercuryo.",
-    "entity": "Vexutopia"
+    "disclaimer": "هذا الموقع غير تابع لـ Mercuryo."
   }
 }

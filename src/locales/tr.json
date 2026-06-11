@@ -9,7 +9,7 @@
     "step4": "\"Boost Points'e ihtiyacım yok\" seçeneğini seçmelisiniz. Aksi takdirde, sizden bir ücret alınacaktır.",
     "wallet_label": "USDC BASE cüzdan adresi",
     "copy_button": "USDC BASE adresini kopyala",
-    "copy_success": "✅ Kopyalandı! Ödeme yapmak için bu adresi USDC BASE cüzdan adresi alanına yapıştırın.",
+    "copy_success": "✅ Kopyalandı! Ödeme yapmak için cüzdan adresi alanına yapıştırın.",
     "return_button": "Ödemeye dön",
     "success_title": "Ödeme alındı",
     "success_msg": "Artık bu sekmeyi kapatabilirsiniz.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "Ödemeye devam etmek için önceki sekmeye dönün."
   },
   "footer": {
-    "disclaimer": "Bu site Mercuryo ile bağlantılı değildir.",
-    "entity": "Vexutopia"
+    "disclaimer": "Bu site Mercuryo ile bağlantılı değildir."
   }
 }

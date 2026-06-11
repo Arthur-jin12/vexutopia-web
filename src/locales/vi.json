@@ -9,7 +9,7 @@
     "step4": "Bạn phải chọn \"Tôi không cần Boost Points\". Nếu không, bạn sẽ bị tính phí.",
     "wallet_label": "Địa chỉ ví USDC BASE",
     "copy_button": "Sao chép địa chỉ USDC BASE",
-    "copy_success": "✅ Đã sao chép! Dán địa chỉ này vào ô địa chỉ ví USDC BASE để thanh toán.",
+    "copy_success": "✅ Đã sao chép! Dán vào ô địa chỉ ví để thanh toán.",
     "return_button": "Quay lại thanh toán",
     "success_title": "Đã nhận thanh toán",
     "success_msg": "Bây giờ bạn có thể đóng tab này.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "Quay lại tab trước để tiếp tục thanh toán."
   },
   "footer": {
-    "disclaimer": "Trang web này không liên kết với Mercuryo.",
-    "entity": "Vexutopia"
+    "disclaimer": "Trang web này không liên kết với Mercuryo."
   }
 }

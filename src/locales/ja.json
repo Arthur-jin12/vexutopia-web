@@ -9,7 +9,7 @@
     "step4": "必ず「Boost Points は必要ありません」を選択してください。選択しないと、手数料が請求されます。",
     "wallet_label": "USDC BASE ウォレットアドレス",
     "copy_button": "USDC BASE アドレスをコピー",
-    "copy_success": "✅ コピーしました！このアドレスを USDC BASE ウォレットアドレス欄に貼り付けてお支払いください。",
+    "copy_success": "✅ コピーしました！ウォレットアドレス欄に貼り付けてお支払いください。",
     "return_button": "チェックアウトに戻る",
     "success_title": "お支払いを受け付けました",
     "success_msg": "このタブを閉じてかまいません。",
@@ -21,7 +21,6 @@
     "close_hint_msg": "前のタブに戻って手続きを続けてください。"
   },
   "footer": {
-    "disclaimer": "本サイトは Mercuryo と提携していません。",
-    "entity": "Vexutopia"
+    "disclaimer": "本サイトは Mercuryo と提携していません。"
   }
 }

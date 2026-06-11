@@ -9,7 +9,7 @@
     "step4": "Musisz wybrać \"Nie potrzebuję Boost Points\". W przeciwnym razie zostanie naliczona opłata.",
     "wallet_label": "Adres portfela USDC BASE",
     "copy_button": "Kopiuj adres USDC BASE",
-    "copy_success": "✅ Skopiowano! Wklej ten adres w polu adresu portfela USDC BASE, aby zapłacić.",
+    "copy_success": "✅ Skopiowano! Wklej go w polu adresu portfela, aby zapłacić.",
     "return_button": "Powrót do płatności",
     "success_title": "Płatność otrzymana",
     "success_msg": "Możesz teraz zamknąć tę kartę.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "Wróć do poprzedniej karty, aby kontynuować płatność."
   },
   "footer": {
-    "disclaimer": "Ta strona nie jest powiązana z Mercuryo.",
-    "entity": "Vexutopia"
+    "disclaimer": "Ta strona nie jest powiązana z Mercuryo."
   }
 }

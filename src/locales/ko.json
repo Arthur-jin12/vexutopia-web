@@ -9,7 +9,7 @@
     "step4": "\"Boost Points가 필요하지 않습니다\"를 반드시 선택해야 합니다. 그렇지 않으면 수수료가 부과됩니다.",
     "wallet_label": "USDC BASE 지갑 주소",
     "copy_button": "USDC BASE 주소 복사",
-    "copy_success": "✅ 복사됨! 이 주소를 USDC BASE 지갑 주소 입력란에 붙여넣어 결제하세요.",
+    "copy_success": "✅ 복사됨! 지갑 주소 입력란에 붙여넣어 결제하세요.",
     "return_button": "결제로 돌아가기",
     "success_title": "결제 완료",
     "success_msg": "이제 이 탭을 닫으셔도 됩니다.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "이전 탭으로 돌아가 결제를 계속하세요."
   },
   "footer": {
-    "disclaimer": "본 사이트는 Mercuryo와 무관합니다.",
-    "entity": "Vexutopia"
+    "disclaimer": "본 사이트는 Mercuryo와 무관합니다."
   }
 }

@@ -11,7 +11,7 @@
     "step4": "You must select \"I don't need Boost Points\". Otherwise, you will be charged a fee.",
     "wallet_label": "USDC BASE wallet address",
     "copy_button": "Copy USDC BASE address",
-    "copy_success": "✅ Copied! Paste this address in the USDC BASE wallet address field to pay.",
+    "copy_success": "✅ Copied! Paste it in the wallet address field to pay.",
     "return_button": "Return to checkout",
     "success_title": "Payment received",
     "success_msg": "You can close this tab now.",
@@ -23,7 +23,6 @@
     "close_hint_msg": "Return to the previous tab to continue with checkout."
   },
   "footer": {
-    "disclaimer": "This site is not affiliated with Mercuryo.",
-    "entity": "Vexutopia"
+    "disclaimer": "This site is not affiliated with Mercuryo."
   }
 }

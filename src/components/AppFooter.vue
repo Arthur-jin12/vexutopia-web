@@ -1,14 +1,12 @@
 <template>
   <footer class="app-footer">
     <p class="disclaimer">{{ t('footer.disclaimer') }}</p>
-    <p class="entity">© {{ year }} {{ t('footer.entity') }}</p>
   </footer>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-const year = new Date().getFullYear();
 </script>
 
 <style scoped>
@@ -20,10 +18,6 @@ const year = new Date().getFullYear();
   color: var(--muted);
 }
 .disclaimer {
-  margin: 0 0 4px;
-}
-.entity {
   margin: 0;
-  opacity: 0.75;
 }
 </style>

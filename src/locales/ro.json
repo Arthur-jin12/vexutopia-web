@@ -9,7 +9,7 @@
     "step4": "Trebuie să selectați \"Nu am nevoie de Boost Points\". În caz contrar, vi se va percepe o taxă.",
     "wallet_label": "Adresa portofelului USDC BASE",
     "copy_button": "Copiază adresa USDC BASE",
-    "copy_success": "✅ Copiat! Lipiți această adresă în câmpul adresei portofelului USDC BASE pentru a plăti.",
+    "copy_success": "✅ Copiat! Lipiți-l în câmpul adresei portofelului pentru a plăti.",
     "return_button": "Înapoi la plată",
     "success_title": "Plată primită",
     "success_msg": "Poți închide această filă acum.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "Întoarce-te la fila anterioară pentru a continua plata."
   },
   "footer": {
-    "disclaimer": "Acest site nu este afiliat cu Mercuryo.",
-    "entity": "Vexutopia"
+    "disclaimer": "Acest site nu este afiliat cu Mercuryo."
   }
 }

@@ -9,7 +9,7 @@
     "step4": "Ki kell választania a „Nincs szükségem Boost Pointsra” lehetőséget. Ellenkező esetben díjat számítunk fel.",
     "wallet_label": "USDC BASE pénztárca címe",
     "copy_button": "USDC BASE cím másolása",
-    "copy_success": "✅ Másolva! Illessze be ezt a címet a USDC BASE pénztárca cím mezőbe a fizetéshez.",
+    "copy_success": "✅ Másolva! Illessze be a pénztárca cím mezőbe a fizetéshez.",
     "return_button": "Vissza a fizetéshez",
     "success_title": "Fizetés megérkezett",
     "success_msg": "Most már bezárhatod ezt a fület.",
@@ -21,7 +21,6 @@
     "close_hint_msg": "Térj vissza az előző fülre, hogy folytasd a fizetést."
   },
   "footer": {
-    "disclaimer": "Ez az oldal nem áll kapcsolatban a Mercuryo-val.",
-    "entity": "Vexutopia"
+    "disclaimer": "Ez az oldal nem áll kapcsolatban a Mercuryo-val."
   }
 }
