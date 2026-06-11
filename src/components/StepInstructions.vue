@@ -64,9 +64,10 @@ const BOLD_TERMS = [
   'USDC',
 ];
 
-function markBold(text) {
+function markBold(text, exclude = []) {
   let result = text;
   for (const term of BOLD_TERMS) {
+    if (exclude.includes(term)) continue;
     const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     result = result.replace(new RegExp(escaped, 'g'), `<strong class="bold-term">${term}</strong>`);
   }
@@ -80,7 +81,7 @@ const step1Html = computed(() => {
 
 const step2Html = computed(() => {
   const raw = t('pay.step2', { amount: `<strong>${amountStr.value}</strong>` });
-  return markBold(raw);
+  return markBold(raw, ['USDC']);
 });
 
 const step3Html = computed(() => markBold(t('pay.step3')));
