@@ -1,6 +1,5 @@
 <template>
   <div class="wallet">
-    <div class="wallet-label">{{ t('pay.wallet_label') }}</div>
     <div class="wallet-row">
       <button
         type="button"
@@ -46,14 +45,6 @@ async function copy() {
 .wallet {
   margin: 28px 0;
 }
-.wallet-label {
-  font-size: 17px;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 14px;
-  font-weight: 600;
-}
 .wallet-row {
   display: flex;
   border-radius: 8px;
@@ -78,10 +69,6 @@ async function copy() {
 }
 
 @media (max-width: 640px) {
-  .wallet-label {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
   .copy-btn {
     font-size: 16px;
     padding: 16px 18px;

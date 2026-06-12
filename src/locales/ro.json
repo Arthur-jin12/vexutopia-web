@@ -7,7 +7,6 @@
     "step2": "Apoi tastați {amount}, suma pe care o datorați, în caseta \"You get\" USDC.",
     "step3": "Când vi se solicită adresa portofelului USDC BASE, lipiți-o pe cea de mai jos:",
     "step4": "Trebuie să selectați \"Nu am nevoie de Boost Points\". În caz contrar, vi se va percepe o taxă.",
-    "wallet_label": "Adresa portofelului USDC BASE",
     "copy_button": "Copiază adresa USDC BASE",
     "copy_success": "✅ Copiat! Lipiți-l în câmpul adresei portofelului pentru a plăti.",
     "return_button": "Înapoi la plată",

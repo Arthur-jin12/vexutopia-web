@@ -9,7 +9,6 @@
     "step2": "Then type {amount}, the amount you owe, in the \"You get\" USDC box.",
     "step3": "When prompted for the USDC BASE wallet address, paste the one below:",
     "step4": "You must select \"I don't need Boost Points\". Otherwise, you will be charged a fee.",
-    "wallet_label": "USDC BASE wallet address",
     "copy_button": "Copy USDC BASE address",
     "copy_success": "✅ Copied! Paste it in the wallet address field to pay.",
     "return_button": "Return to checkout",

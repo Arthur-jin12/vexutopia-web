@@ -7,7 +7,6 @@
     "step2": "Ardından \"You get\" USDC kutusuna borçlu olduğunuz tutar olan {amount} yazın.",
     "step3": "USDC BASE cüzdan adresi istendiğinde, aşağıdakini yapıştırın:",
     "step4": "\"Boost Points'e ihtiyacım yok\" seçeneğini seçmelisiniz. Aksi takdirde, sizden bir ücret alınacaktır.",
-    "wallet_label": "USDC BASE cüzdan adresi",
     "copy_button": "USDC BASE adresini kopyala",
     "copy_success": "✅ Kopyalandı! Ödeme yapmak için cüzdan adresi alanına yapıştırın.",
     "return_button": "Ödemeye dön",
