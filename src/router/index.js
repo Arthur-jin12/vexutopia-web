@@ -10,6 +10,12 @@ const routes = [
     component: PayView,
     props: true,
   },
+  {
+    path: '/order/:token',
+    name: 'order',
+    component: PayView,
+    props: true,
+  },
   // Anything else — generic Order Not Found, no branding.
   {
     path: '/:pathMatch(.*)*',

@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "Lingua" },
+  "nav": {
+    "language": "Lingua"
+  },
   "pay": {
     "loading": "Caricamento dei dettagli di pagamento…",
     "title": "Completa il pagamento",
@@ -18,8 +20,5 @@
     "notfound_msg": "Questo link non è valido o è scaduto.",
     "close_hint_title": "Puoi chiudere questa scheda",
     "close_hint_msg": "Torna alla scheda precedente per continuare il checkout."
-  },
-  "footer": {
-    "disclaimer": "Questo sito non è affiliato a Mercuryo."
   }
 }

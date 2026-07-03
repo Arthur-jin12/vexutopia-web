@@ -79,8 +79,6 @@
         </a>
       </div>
     </section>
-
-    <AppFooter />
   </div>
 </template>
 
@@ -93,7 +91,6 @@ import { setLocale } from '@/i18n';
 import LanguageSelector from '@/components/LanguageSelector.vue';
 import StepInstructions from '@/components/StepInstructions.vue';
 import WalletDisplay from '@/components/WalletDisplay.vue';
-import AppFooter from '@/components/AppFooter.vue';
 
 const props = defineProps({
   token: { type: String, required: true },

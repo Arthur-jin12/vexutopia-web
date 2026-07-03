@@ -20,8 +20,5 @@
     "notfound_msg": "This link is invalid or has expired.",
     "close_hint_title": "You can close this tab",
     "close_hint_msg": "Return to the previous tab to continue with checkout."
-  },
-  "footer": {
-    "disclaimer": "This site is not affiliated with Mercuryo."
   }
 }

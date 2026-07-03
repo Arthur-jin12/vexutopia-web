@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "Ngôn ngữ" },
+  "nav": {
+    "language": "Ngôn ngữ"
+  },
   "pay": {
     "loading": "Đang tải thông tin thanh toán…",
     "title": "Hoàn tất thanh toán",
@@ -18,8 +20,5 @@
     "notfound_msg": "Liên kết này không hợp lệ hoặc đã hết hạn.",
     "close_hint_title": "Bạn có thể đóng tab này",
     "close_hint_msg": "Quay lại tab trước để tiếp tục thanh toán."
-  },
-  "footer": {
-    "disclaimer": "Trang web này không liên kết với Mercuryo."
   }
 }

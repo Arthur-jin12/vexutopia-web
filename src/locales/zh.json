@@ -20,8 +20,5 @@
     "notfound_msg": "此链接无效或已过期。",
     "close_hint_title": "您可以关闭此标签页",
     "close_hint_msg": "请返回上一个标签页继续结算。"
-  },
-  "footer": {
-    "disclaimer": "本站与 Mercuryo 无关联。"
   }
 }

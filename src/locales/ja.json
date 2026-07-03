@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "言語" },
+  "nav": {
+    "language": "言語"
+  },
   "pay": {
     "loading": "お支払い情報を読み込んでいます…",
     "title": "お支払いの完了",
@@ -18,8 +20,5 @@
     "notfound_msg": "このリンクは無効または期限切れです。",
     "close_hint_title": "このタブを閉じてください",
     "close_hint_msg": "前のタブに戻って手続きを続けてください。"
-  },
-  "footer": {
-    "disclaimer": "本サイトは Mercuryo と提携していません。"
   }
 }

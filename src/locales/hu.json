@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "Nyelv" },
+  "nav": {
+    "language": "Nyelv"
+  },
   "pay": {
     "loading": "Fizetési adatok betöltése…",
     "title": "Fizetés véglegesítése",
@@ -18,8 +20,5 @@
     "notfound_msg": "Ez a link érvénytelen vagy lejárt.",
     "close_hint_title": "Bezárhatod ezt a fület",
     "close_hint_msg": "Térj vissza az előző fülre, hogy folytasd a fizetést."
-  },
-  "footer": {
-    "disclaimer": "Ez az oldal nem áll kapcsolatban a Mercuryo-val."
   }
 }

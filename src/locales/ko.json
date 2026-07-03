@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "언어" },
+  "nav": {
+    "language": "언어"
+  },
   "pay": {
     "loading": "결제 정보를 불러오는 중…",
     "title": "결제를 완료해 주세요",
@@ -18,8 +20,5 @@
     "notfound_msg": "이 링크는 유효하지 않거나 만료되었습니다.",
     "close_hint_title": "이 탭을 닫으셔도 됩니다",
     "close_hint_msg": "이전 탭으로 돌아가 결제를 계속하세요."
-  },
-  "footer": {
-    "disclaimer": "본 사이트는 Mercuryo와 무관합니다."
   }
 }

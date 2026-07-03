@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "Idioma" },
+  "nav": {
+    "language": "Idioma"
+  },
   "pay": {
     "loading": "Cargando los detalles del pago…",
     "title": "Completa tu pago",
@@ -18,8 +20,5 @@
     "notfound_msg": "Este enlace no es válido o ha expirado.",
     "close_hint_title": "Puedes cerrar esta pestaña",
     "close_hint_msg": "Vuelve a la pestaña anterior para continuar con el pago."
-  },
-  "footer": {
-    "disclaimer": "Este sitio no está afiliado con Mercuryo."
   }
 }

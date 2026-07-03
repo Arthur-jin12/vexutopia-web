@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "Idioma" },
+  "nav": {
+    "language": "Idioma"
+  },
   "pay": {
     "loading": "Carregando os detalhes do pagamento…",
     "title": "Finalize seu pagamento",
@@ -18,8 +20,5 @@
     "notfound_msg": "Este link é inválido ou expirou.",
     "close_hint_title": "Você pode fechar esta aba",
     "close_hint_msg": "Volte para a aba anterior para continuar o checkout."
-  },
-  "footer": {
-    "disclaimer": "Este site não é afiliado à Mercuryo."
   }
 }

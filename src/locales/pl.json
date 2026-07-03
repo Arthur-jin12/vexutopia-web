@@ -1,5 +1,7 @@
 ﻿{
-  "nav": { "language": "Język" },
+  "nav": {
+    "language": "Język"
+  },
   "pay": {
     "loading": "Ładowanie szczegółów płatności…",
     "title": "Sfinalizuj płatność",
@@ -18,8 +20,5 @@
     "notfound_msg": "Ten link jest nieprawidłowy lub wygasł.",
     "close_hint_title": "Możesz zamknąć tę kartę",
     "close_hint_msg": "Wróć do poprzedniej karty, aby kontynuować płatność."
-  },
-  "footer": {
-    "disclaimer": "Ta strona nie jest powiązana z Mercuryo."
   }
 }
