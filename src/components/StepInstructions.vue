@@ -15,6 +15,10 @@
         <slot name="step3-extra" />
       </div>
     </li>
+    <li class="step">
+      <span class="step-marker">4</span>
+      <span class="step-body" v-html="step4Html" />
+    </li>
   </ol>
 </template>
 
@@ -34,6 +38,25 @@ const amountStr = computed(() => {
 
 const MERCURYO_LINK = '<a href="https://exchange.mercuryo.io" target="_blank" rel="noopener noreferrer">Mercuryo</a>';
 const BOLD_TERMS = [
+  // "I don't need Boost Points" — Mercuryo checkbox label, localized per language
+  "I don't need Boost Points",
+  "我不需要 Boost Points",
+  "Boost Points は必要ありません",
+  "Boost Points가 필요하지 않습니다",
+  "Tôi không cần Boost Points",
+  "ฉันไม่ต้องการ Boost Points",
+  "لست بحاجة إلى Boost Points",
+  "Ich brauche keine Boost Points",
+  "No necesito Boost Points",
+  "Je n'ai pas besoin de Boost Points",
+  "Nincs szükségem Boost Pointsra",
+  "Non ho bisogno di Boost Points",
+  "Nie potrzebuję Boost Points",
+  "Não preciso de Boost Points",
+  "Nu am nevoie de Boost Points",
+  "Мне не нужны Boost Points",
+  "Boost Points'e ihtiyacım yok",
+  "Мені не потрібні Boost Points",
   // Mercuryo UI labels (English in all locales)
   'USDC BASE',
   'BTC',
@@ -62,6 +85,7 @@ const step2Html = computed(() => {
 });
 
 const step3Html = computed(() => markBold(t('pay.step3')));
+const step4Html = computed(() => markBold(t('pay.step4')));
 </script>
 
 <style scoped>

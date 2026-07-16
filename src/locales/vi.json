@@ -8,6 +8,7 @@
     "step1": "Truy cập {mercuryo}, nhấp vào nút \"BTC\" và chọn USDC BASE.",
     "step2": "Sau đó nhập {amount}, số tiền bạn nợ, vào ô \"You get\" USDC.",
     "step3": "Khi được yêu cầu địa chỉ ví USDC BASE, hãy dán địa chỉ bên dưới:",
+    "step4": "Bạn phải chọn \"Tôi không cần Boost Points\". Nếu không, bạn sẽ bị tính phí.",
     "copy_button": "Sao chép địa chỉ USDC BASE",
     "copy_success": "✅ Đã sao chép! Dán vào ô địa chỉ ví để thanh toán.",
     "return_button": "Quay lại thanh toán",

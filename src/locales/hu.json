@@ -8,6 +8,7 @@
     "step1": "Lépjen a {mercuryo} oldalra, kattintson a \"BTC\" gombra, és válassza az USDC BASE-t.",
     "step2": "Ezután írja be az \"You get\" USDC mezőbe a {amount} összeget, amellyel tartozik.",
     "step3": "Amikor az USDC BASE pénztárca címét kérik, illessze be az alábbi címet:",
+    "step4": "Ki kell választania a „Nincs szükségem Boost Pointsra” lehetőséget. Ellenkező esetben díjat számítunk fel.",
     "copy_button": "USDC BASE cím másolása",
     "copy_success": "✅ Másolva! Illessze be a pénztárca cím mezőbe a fizetéshez.",
     "return_button": "Vissza a fizetéshez",

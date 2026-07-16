@@ -8,6 +8,7 @@
     "step1": "Gehen Sie zu {mercuryo}, klicken Sie auf die Schaltfläche \"BTC\" und wählen Sie USDC BASE.",
     "step2": "Geben Sie dann {amount}, den geschuldeten Betrag, in das Feld \"You get\" USDC ein.",
     "step3": "Wenn Sie nach der USDC BASE-Wallet-Adresse gefragt werden, fügen Sie die folgende ein:",
+    "step4": "Sie müssen „Ich brauche keine Boost Points“ auswählen. Andernfalls wird Ihnen eine Gebühr berechnet.",
     "copy_button": "USDC BASE-Adresse kopieren",
     "copy_success": "✅ Kopiert! Fügen Sie sie in das Feld für die Wallet-Adresse ein, um zu bezahlen.",
     "return_button": "Zurück zur Kasse",

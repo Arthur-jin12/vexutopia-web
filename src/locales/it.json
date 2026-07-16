@@ -8,6 +8,7 @@
     "step1": "Vai su {mercuryo}, clicca sul pulsante \"BTC\" e scegli USDC BASE.",
     "step2": "Poi digita {amount}, l'importo dovuto, nella casella \"You get\" USDC.",
     "step3": "Quando ti viene chiesto l'indirizzo del portafoglio USDC BASE, incolla quello qui sotto:",
+    "step4": "Devi selezionare \"Non ho bisogno di Boost Points\". Altrimenti, ti verrà addebitata una commissione.",
     "copy_button": "Copia indirizzo USDC BASE",
     "copy_success": "✅ Copiato! Incollalo nel campo dell'indirizzo del portafoglio per pagare.",
     "return_button": "Torna al checkout",
