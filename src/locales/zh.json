@@ -8,7 +8,6 @@
     "step1": "前往 {mercuryo}，点击\"BTC\"按钮并选择 USDC BASE。",
     "step2": "然后在\"You get\" USDC 框中输入 {amount}，即您所欠的金额。",
     "step3": "当提示输入 USDC BASE 钱包地址时，请粘贴以下地址：",
-    "step4": "您必须选择 \"我不需要 Boost Points\"。否则，您将被收取费用。",
     "copy_button": "复制 USDC BASE 地址",
     "copy_success": "✅ 已复制！请将其粘贴到钱包地址栏中以完成支付。",
     "return_button": "返回结算页",

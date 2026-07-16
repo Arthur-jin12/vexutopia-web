@@ -8,7 +8,6 @@
     "step1": "{mercuryo}にアクセスし、「BTC」ボタンをクリックしてUSDC BASEを選択してください。",
     "step2": "次に「You get」のUSDCボックスに、お支払い金額の{amount}を入力してください。",
     "step3": "USDC BASEウォレットアドレスを求められたら、以下のアドレスを貼り付けてください：",
-    "step4": "必ず「Boost Points は必要ありません」を選択してください。選択しないと、手数料が請求されます。",
     "copy_button": "USDC BASE アドレスをコピー",
     "copy_success": "✅ コピーしました！ウォレットアドレス欄に貼り付けてお支払いください。",
     "return_button": "チェックアウトに戻る",
