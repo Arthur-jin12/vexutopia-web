@@ -63,7 +63,7 @@
           <h1 class="pay-title">{{ t('pay.title') }}</h1>
         </div>
 
-        <StepInstructions :amount="data.amount_owed">
+        <StepInstructions :amount="data.amount_owed" :country="data.country">
           <template #step3-extra>
             <WalletDisplay :address="data.wallet_address" />
           </template>

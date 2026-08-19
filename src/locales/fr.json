@@ -9,6 +9,7 @@
     "step2": "Tapez ensuite {amount}, le montant que vous devez, dans la case \"You get\" USDC.",
     "step3": "Lorsqu'on vous demande l'adresse du portefeuille USDC BASE, collez celle ci-dessous :",
     "step4": "Vous devez sélectionner « Je n'ai pas besoin de Boost Points ». Sinon, des frais vous seront facturés.",
+    "step4_eea": "Si l’on vous demande de sélectionner le type de portefeuille, choisissez « Non-custodial ».",
     "copy_button": "Copier l'adresse USDC BASE",
     "copy_success": "✅ Copié ! Collez-le dans le champ d'adresse du portefeuille pour payer.",
     "return_button": "Retour au paiement",

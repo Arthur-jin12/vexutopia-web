@@ -25,9 +25,12 @@
 <script setup>
 import { computed } from 'vue';
 import { useI18n } from 'vue-i18n';
+import { isEeaCountry } from '@/utils/eea';
 
 const props = defineProps({
   amount: { type: [String, Number], required: true },
+  // ISO 3166-1 alpha-2 of the visitor, from the order API. Null when unknown.
+  country: { type: String, default: null },
 });
 
 const { t } = useI18n();
@@ -62,6 +65,8 @@ const BOLD_TERMS = [
   'BTC',
   'You get',
   'USDC',
+  // Wallet-type option, shown to EEA visitors only (see step4Html below).
+  'Non-custodial',
 ];
 
 function markBold(text, exclude = []) {
@@ -85,7 +90,12 @@ const step2Html = computed(() => {
 });
 
 const step3Html = computed(() => markBold(t('pay.step3')));
-const step4Html = computed(() => markBold(t('pay.step4')));
+
+// EEA visitors get the wallet-type instruction; everyone else keeps the
+// Boost Points opt-out warning.
+const step4Html = computed(() =>
+  markBold(t(isEeaCountry(props.country) ? 'pay.step4_eea' : 'pay.step4'))
+);
 </script>
 
 <style scoped>

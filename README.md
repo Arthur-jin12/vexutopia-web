@@ -51,6 +51,7 @@ src/                    Vue source
   locales/              JSON translation bundles
   router/               Vue Router config
   styles/               Global CSS
+  utils/                Small shared helpers (EEA country list, …)
 ```
 
 ## Environment variables

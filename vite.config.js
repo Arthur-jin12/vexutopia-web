@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import { generateJSON } from '@intlify/bundle-utils';
 import { fileURLToPath, URL } from 'node:url';
@@ -61,6 +61,15 @@ function i18nPrecompile() {
  *   http://localhost:5173/pay/anytoken?mock=EXPIRED
  *   http://localhost:5173/pay/anytoken?mock=404      (renders Order Not Found)
  *
+ * ?country= mocks the visitor geo that Cloudflare supplies in production, e.g.
+ *   http://localhost:5173/pay/anytoken?country=DE     (EEA Step 4 wording)
+ *   http://localhost:5173/pay/anytoken?country=CH     (default Step 4 wording)
+ *
+ * The order fixture itself is NOT hard-coded here. Set MOCK_AMOUNT,
+ * MOCK_AMOUNT_PARTIAL and MOCK_WALLET in .env.local (gitignored) — see
+ * .env.example. Unset means 0.00 and an empty address, which still renders
+ * every branch of the page.
+ *
  * In production this plugin is inert — Cloudflare Pages Functions handle /api/*.
  */
 function mockOrderApi() {
@@ -68,6 +77,14 @@ function mockOrderApi() {
     name: 'mock-order-api',
     apply: 'serve',
     configureServer(server) {
+      // Read once at startup. `loadEnv` picks up .env.local without exposing
+      // anything to the client bundle — these never leave the dev server.
+      const fixtures = loadEnv(server.config.mode, server.config.root, 'MOCK_');
+      const fixtureAmount = (key, fallback) => {
+        const n = Number(fixtures[key]);
+        return Number.isFinite(n) && fixtures[key] !== '' ? n : fallback;
+      };
+
       server.middlewares.use(async (req, res, next) => {
         const url = new URL(req.url, 'http://localhost');
         if (url.pathname !== '/api/order') return next();
@@ -81,9 +98,12 @@ function mockOrderApi() {
 
         // Mock control comes from the page URL (the Referer of this fetch).
         let mock = null;
+        let country = null;
         if (req.headers.referer) {
           try {
-            mock = new URL(req.headers.referer).searchParams.get('mock');
+            const params = new URL(req.headers.referer).searchParams;
+            mock = params.get('mock');
+            country = params.get('country');
           } catch (_) {}
         }
         const status = (mock || 'PENDING').toUpperCase();
@@ -95,12 +115,15 @@ function mockOrderApi() {
         }
 
         const body = {
-          amount_owed: 19.99,
-          wallet_address: '0x85d3073A666F608715ae0cff0E9fA57d526Fe420',
+          amount_owed: fixtureAmount('MOCK_AMOUNT', 0),
+          wallet_address: fixtures.MOCK_WALLET || '',
           language_code: '',
           order_status: ['PENDING', 'PARTIAL', 'PAID', 'EXPIRED'].includes(status) ? status : 'PENDING',
+          country: country ? country.toUpperCase() : null,
         };
-        if (body.order_status === 'PARTIAL') body.amount_owed = 7.01;
+        if (body.order_status === 'PARTIAL') {
+          body.amount_owed = fixtureAmount('MOCK_AMOUNT_PARTIAL', body.amount_owed);
+        }
 
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json; charset=utf-8');

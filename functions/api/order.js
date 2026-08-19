@@ -74,11 +74,15 @@ export const onRequestPost = async (context) => {
   }
 
   // 5. Strict whitelist — never spread the upstream object.
+  // `country` is not upstream data: it is Cloudflare's geo-lookup of the
+  // visitor's IP, added here because the SPA has no other way to see it.
+  // Used only to pick the EEA variant of the Step 4 instructions.
   const safe = {
     amount_owed: data.amount_owed,
     wallet_address: data.wallet_address,
     language_code: data.language_code,
     order_status: data.order_status,
+    country: visitorCountry(request),
   };
 
   return new Response(JSON.stringify(safe), {
@@ -93,6 +97,16 @@ export const onRequestPost = async (context) => {
     },
   });
 };
+
+// Two-letter country code for the visitor, from Cloudflare's edge geo lookup.
+// Returns null when unavailable ('XX'/'T1' placeholders, local dev, or a
+// malformed value) so callers fall back to the default behaviour.
+function visitorCountry(request) {
+  const raw = (request.cf && request.cf.country) || request.headers.get('CF-IPCountry');
+  if (typeof raw !== 'string' || !/^[A-Z]{2}$/.test(raw)) return null;
+  if (raw === 'XX' || raw === 'T1') return null;
+  return raw;
+}
 
 // Reject anything that isn't POST.
 export const onRequest = async ({ request }) => {
