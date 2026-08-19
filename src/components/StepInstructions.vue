@@ -60,13 +60,31 @@ const BOLD_TERMS = [
   "Мне не нужны Boost Points",
   "Boost Points'e ihtiyacım yok",
   "Мені не потрібні Boost Points",
+  // "Non-custodial" — Mercuryo wallet-type option, localized per language.
+  // Only ever rendered for EEA visitors (see step4Html below).
+  'Non-custodial',
+  '非托管',
+  '非カストディアル',
+  '비수탁형',
+  'Không lưu ký',
+  'ไม่รับฝากทรัพย์สิน',
+  'غير احتجازية',
+  'Nicht-verwahrend',
+  'No custodial',
+  'Non-dépositaire',
+  'Nem letétkezelt',
+  'Non custodiale',
+  'Niepowierniczy',
+  'Não custodial',
+  'Fără custodie',
+  'Некастодиальный',
+  'Saklamasız',
+  'Некастодіальний',
   // Mercuryo UI labels (English in all locales)
   'USDC BASE',
   'BTC',
   'You get',
   'USDC',
-  // Wallet-type option, shown to EEA visitors only (see step4Html below).
-  'Non-custodial',
 ];
 
 function markBold(text, exclude = []) {
