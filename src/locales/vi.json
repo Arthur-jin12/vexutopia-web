@@ -11,7 +11,7 @@
     "step4": "Bạn phải chọn \"Tôi không cần Boost Points\". Nếu không, bạn sẽ bị tính phí.",
     "step4_eea": "Nếu bạn được yêu cầu chọn loại ví, hãy chọn \"Không lưu ký\".",
     "banxa_step1": "Truy cập {banxa}.",
-    "banxa_step2": "Khi được yêu cầu \"Your wallet address\", hãy dán địa chỉ bên dưới:",
+    "banxa_step2": "Khi được yêu cầu \"Địa chỉ ví của bạn\", hãy dán địa chỉ bên dưới:",
     "banxa_step3": "Chọn phương thức thanh toán và hoàn tất thanh toán.",
     "copy_button": "Sao chép địa chỉ USDC BASE",
     "copy_success": "✅ Đã sao chép! Dán vào ô địa chỉ ví để thanh toán.",

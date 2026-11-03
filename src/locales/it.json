@@ -11,7 +11,7 @@
     "step4": "Devi selezionare \"Non ho bisogno di Boost Points\". Altrimenti, ti verrà addebitata una commissione.",
     "step4_eea": "Se ti viene chiesto di selezionare il tipo di portafoglio, scegli \"Non custodiale\".",
     "banxa_step1": "Vai su {banxa}.",
-    "banxa_step2": "Quando ti viene chiesto \"Your wallet address\", incolla quello qui sotto:",
+    "banxa_step2": "Quando ti viene chiesto \"Il tuo indirizzo wallet\", incolla quello qui sotto:",
     "banxa_step3": "Scegli il metodo di pagamento e completa il pagamento.",
     "copy_button": "Copia indirizzo USDC BASE",
     "copy_success": "✅ Copiato! Incollalo nel campo dell'indirizzo del portafoglio per pagare.",

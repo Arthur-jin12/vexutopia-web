@@ -11,7 +11,7 @@
     "step4": "\"Boost Points'e ihtiyacım yok\" seçeneğini seçmelisiniz. Aksi takdirde, sizden bir ücret alınacaktır.",
     "step4_eea": "Cüzdan türünü seçmeniz istenirse, \"Saklamasız\" seçeneğini seçin.",
     "banxa_step1": "{banxa} sitesine gidin.",
-    "banxa_step2": "\"Your wallet address\" istendiğinde, aşağıdakini yapıştırın:",
+    "banxa_step2": "\"Cüzdan adresiniz\" istendiğinde, aşağıdakini yapıştırın:",
     "banxa_step3": "Ödeme yönteminizi seçin ve ödemeyi tamamlayın.",
     "copy_button": "USDC BASE adresini kopyala",
     "copy_success": "✅ Kopyalandı! Ödeme yapmak için cüzdan adresi alanına yapıştırın.",

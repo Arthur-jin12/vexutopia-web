@@ -11,7 +11,7 @@
     "step4": "Musisz wybrać \"Nie potrzebuję Boost Points\". W przeciwnym razie zostanie naliczona opłata.",
     "step4_eea": "Jeśli zostaniesz poproszony o wybór typu portfela, wybierz \"Niepowierniczy\".",
     "banxa_step1": "Przejdź na {banxa}.",
-    "banxa_step2": "Gdy pojawi się prośba o \"Your wallet address\", wklej poniższy:",
+    "banxa_step2": "Gdy pojawi się prośba o \"Adres Twojego portfela\", wklej poniższy:",
     "banxa_step3": "Wybierz metodę płatności i dokończ płatność.",
     "copy_button": "Kopiuj adres USDC BASE",
     "copy_success": "✅ Skopiowano! Wklej go w polu adresu portfela, aby zapłacić.",

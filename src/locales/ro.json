@@ -11,7 +11,7 @@
     "step4": "Trebuie să selectați \"Nu am nevoie de Boost Points\". În caz contrar, vi se va percepe o taxă.",
     "step4_eea": "Dacă vi se cere să selectați tipul portofelului, alegeți \"Fără custodie\".",
     "banxa_step1": "Accesați {banxa}.",
-    "banxa_step2": "Când vi se solicită \"Your wallet address\", lipiți-o pe cea de mai jos:",
+    "banxa_step2": "Când vi se solicită \"Adresa portofelului dvs.\", lipiți-o pe cea de mai jos:",
     "banxa_step3": "Alegeți metoda de plată și finalizați plata.",
     "copy_button": "Copiază adresa USDC BASE",
     "copy_success": "✅ Copiat! Lipiți-l în câmpul adresei portofelului pentru a plăti.",

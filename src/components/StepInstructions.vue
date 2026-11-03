@@ -109,13 +109,33 @@ const BOLD_TERMS = [
   'BTC',
   'You get',
   'USDC',
-  // Banxa UI label (English in all locales)
+];
+// "Your wallet address" — Banxa field label, localized per language. Kept apart
+// from BOLD_TERMS: the ja/ko wording also occurs in the Mercuryo step3 text.
+const BANXA_BOLD_TERMS = [
   'Your wallet address',
+  '您的钱包地址',
+  'ウォレットアドレス',
+  '지갑 주소',
+  'Địa chỉ ví của bạn',
+  'ที่อยู่กระเป๋าเงินของคุณ',
+  'عنوان محفظتك',
+  'Ihre Wallet-Adresse',
+  'Su dirección de billetera',
+  'Votre adresse de portefeuille',
+  'Az Ön tárcacíme',
+  'Il tuo indirizzo wallet',
+  'Adres Twojego portfela',
+  'Seu endereço de carteira',
+  'Adresa portofelului dvs.',
+  'Адрес вашего кошелька',
+  'Cüzdan adresiniz',
+  'Адреса вашого гаманця',
 ];
 
-function markBold(text, exclude = []) {
+function markBold(text, exclude = [], terms = BOLD_TERMS) {
   let result = text;
-  for (const term of BOLD_TERMS) {
+  for (const term of terms) {
     if (exclude.includes(term)) continue;
     const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     result = result.replace(new RegExp(escaped, 'g'), `<strong class="bold-term">${term}</strong>`);
@@ -140,7 +160,7 @@ const banxaStep1Html = computed(() => {
   const link = `<a href="${href}" target="_blank" rel="noopener noreferrer">Banxa</a>`;
   return t('pay.banxa_step1', { banxa: '__BANXA__' }).replace('__BANXA__', link);
 });
-const banxaStep2Html = computed(() => markBold(t('pay.banxa_step2')));
+const banxaStep2Html = computed(() => markBold(t('pay.banxa_step2'), [], BANXA_BOLD_TERMS));
 const banxaStep3Html = computed(() => t('pay.banxa_step3'));
 
 // EEA visitors get the wallet-type instruction; everyone else keeps the

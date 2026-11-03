@@ -11,7 +11,7 @@
     "step4": "您必须选择 \"我不需要 Boost Points\"。否则，您将被收取费用。",
     "step4_eea": "如果系统要求您选择钱包类型，请选择 \"非托管\"。",
     "banxa_step1": "前往 {banxa}。",
-    "banxa_step2": "当提示输入 \"Your wallet address\" 时，请粘贴以下地址：",
+    "banxa_step2": "当提示输入 \"您的钱包地址\" 时，请粘贴以下地址：",
     "banxa_step3": "选择付款方式并完成付款。",
     "copy_button": "复制 USDC BASE 地址",
     "copy_success": "✅ 已复制！请将其粘贴到钱包地址栏中以完成支付。",

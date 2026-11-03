@@ -11,7 +11,7 @@
     "step4": "Ki kell választania a „Nincs szükségem Boost Pointsra” lehetőséget. Ellenkező esetben díjat számítunk fel.",
     "step4_eea": "Ha meg kell adnia a pénztárca típusát, válassza a „Nem letétkezelt” lehetőséget.",
     "banxa_step1": "Lépjen a {banxa} oldalra.",
-    "banxa_step2": "Amikor a \"Your wallet address\" mezőt kérik, illessze be az alábbi címet:",
+    "banxa_step2": "Amikor \"Az Ön tárcacíme\" mezőt kérik, illessze be az alábbi címet:",
     "banxa_step3": "Válassza ki a fizetési módot, és fejezze be a fizetést.",
     "copy_button": "USDC BASE cím másolása",
     "copy_success": "✅ Másolva! Illessze be a pénztárca cím mezőbe a fizetéshez.",

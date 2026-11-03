@@ -11,7 +11,7 @@
     "step4": "Você precisa selecionar \"Não preciso de Boost Points\". Caso contrário, será cobrada uma taxa.",
     "step4_eea": "Se lhe for pedido para selecionar o tipo de carteira, escolha \"Não custodial\".",
     "banxa_step1": "Acesse o {banxa}.",
-    "banxa_step2": "Quando for solicitado \"Your wallet address\", cole o endereço abaixo:",
+    "banxa_step2": "Quando for solicitado \"Seu endereço de carteira\", cole o endereço abaixo:",
     "banxa_step3": "Escolha sua forma de pagamento e conclua o pagamento.",
     "copy_button": "Copiar endereço USDC BASE",
     "copy_success": "✅ Copiado! Cole-o no campo de endereço da carteira para pagar.",
