@@ -82,6 +82,9 @@ export const onRequestPost = async (context) => {
     wallet_address: data.wallet_address,
     language_code: data.language_code,
     order_status: data.order_status,
+    // Banxa checkout link (amount and local currency set upstream), shown on ?p=banxa.
+    banxa_url: typeof data.banxa_url === 'string' && data.banxa_url.startsWith('https://checkout.banxa.com/')
+      ? data.banxa_url : null,
     country: visitorCountry(request),
   };
 

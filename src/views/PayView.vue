@@ -63,13 +63,19 @@
           <h1 class="pay-title">{{ t('pay.title') }}</h1>
         </div>
 
-        <StepInstructions :amount="data.amount_owed" :country="data.country">
+        <StepInstructions
+          :amount="data.amount_owed"
+          :country="data.country"
+          :provider="provider"
+          :banxa-url="data.banxa_url || ''"
+        >
           <template #step3-extra>
             <WalletDisplay :address="data.wallet_address" />
           </template>
         </StepInstructions>
 
         <a
+          v-if="!isBanxa"
           class="pay-tutorial"
           href="https://exchange.mercuryo.io"
           target="_blank"
@@ -83,7 +89,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { useRoute } from 'vue-router';
 import { useOrderStatus } from '@/composables/useOrderStatus';
@@ -100,6 +106,11 @@ const { t } = useI18n();
 const route = useRoute();
 const sandboxEnv = route.query.env === 'sandbox' ? 'sandbox' : undefined;
 const { loading, data, error } = useOrderStatus(props.token, sandboxEnv);
+
+// ?p=banxa (set by the checkout's Pay / "Try a different payment provider") shows the
+// Banxa steps; anything else, or an order without a Banxa link, the Mercuryo ones.
+const provider = route.query.p === 'banxa' ? 'banxa' : 'mercuryo';
+const isBanxa = computed(() => provider === 'banxa' && !!data.value?.banxa_url);
 
 // "Tab cannot self-close" fallback hint
 const showCloseHint = ref(false);

@@ -1,5 +1,23 @@
 <template>
-  <ol class="steps" :data-amount="amount">
+  <!-- Banxa: the amount is already in the link, so three steps and no Mercuryo screens. -->
+  <ol v-if="isBanxa" class="steps" :data-amount="amount">
+    <li class="step">
+      <span class="step-marker">1</span>
+      <span class="step-body" v-html="banxaStep1Html" />
+    </li>
+    <li class="step">
+      <span class="step-marker">2</span>
+      <div class="step-body">
+        <p class="step-prompt" v-html="banxaStep2Html" />
+        <slot name="step3-extra" />
+      </div>
+    </li>
+    <li class="step">
+      <span class="step-marker">3</span>
+      <span class="step-body" v-html="banxaStep3Html" />
+    </li>
+  </ol>
+  <ol v-else class="steps" :data-amount="amount">
     <li class="step">
       <span class="step-marker">1</span>
       <span class="step-body" v-html="step1Html" />
@@ -31,6 +49,9 @@ const props = defineProps({
   amount: { type: [String, Number], required: true },
   // ISO 3166-1 alpha-2 of the visitor, from the order API. Null when unknown.
   country: { type: String, default: null },
+  // 'banxa' shows the Banxa steps with banxaUrl (from the order API); anything else Mercuryo.
+  provider: { type: String, default: 'mercuryo' },
+  banxaUrl: { type: String, default: '' },
 });
 
 const { t } = useI18n();
@@ -39,6 +60,9 @@ const amountStr = computed(() => {
   return Number.isFinite(n) ? n.toFixed(2) : String(props.amount);
 });
 
+// Only ever a Banxa checkout link: anything else falls back to the Mercuryo steps.
+const BANXA_ORIGIN = 'https://checkout.banxa.com/';
+const isBanxa = computed(() => props.provider === 'banxa' && props.banxaUrl.startsWith(BANXA_ORIGIN));
 const MERCURYO_LINK = '<a href="https://exchange.mercuryo.io" target="_blank" rel="noopener noreferrer">Mercuryo</a>';
 const BOLD_TERMS = [
   // "I don't need Boost Points" — Mercuryo checkbox label, localized per language
@@ -85,6 +109,8 @@ const BOLD_TERMS = [
   'BTC',
   'You get',
   'USDC',
+  // Banxa UI label (English in all locales)
+  'Your wallet address',
 ];
 
 function markBold(text, exclude = []) {
@@ -108,6 +134,14 @@ const step2Html = computed(() => {
 });
 
 const step3Html = computed(() => markBold(t('pay.step3')));
+
+const banxaStep1Html = computed(() => {
+  const href = props.banxaUrl.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+  const link = `<a href="${href}" target="_blank" rel="noopener noreferrer">Banxa</a>`;
+  return t('pay.banxa_step1', { banxa: '__BANXA__' }).replace('__BANXA__', link);
+});
+const banxaStep2Html = computed(() => markBold(t('pay.banxa_step2')));
+const banxaStep3Html = computed(() => t('pay.banxa_step3'));
 
 // EEA visitors get the wallet-type instruction; everyone else keeps the
 // Boost Points opt-out warning.

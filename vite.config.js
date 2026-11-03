@@ -65,6 +65,11 @@ function i18nPrecompile() {
  *   http://localhost:5173/pay/anytoken?country=DE     (EEA Step 4 wording)
  *   http://localhost:5173/pay/anytoken?country=CH     (default Step 4 wording)
  *
+ * ?p=banxa shows the Banxa steps; the mock returns a USD Banxa link for them.
+ *
+ * MOCK_UPSTREAM_URL (+ MOCK_UPSTREAM_SECRET) forwards the lookup to a local backend's
+ * /internal/v1/o instead, for real order data end to end.
+ *
  * The order fixture itself is NOT hard-coded here. Set MOCK_AMOUNT,
  * MOCK_AMOUNT_PARTIAL and MOCK_WALLET in .env.local (gitignored) — see
  * .env.example. Unset means 0.00 and an empty address, which still renders
@@ -108,6 +113,28 @@ function mockOrderApi() {
         }
         const status = (mock || 'PENDING').toUpperCase();
 
+        if (fixtures.MOCK_UPSTREAM_URL) {
+          let raw = '';
+          for await (const chunk of req) raw += chunk;
+          try {
+            const up = await fetch(fixtures.MOCK_UPSTREAM_URL, {
+              method: 'POST',
+              headers: {
+                Authorization: `Bearer ${fixtures.MOCK_UPSTREAM_SECRET || ''}`,
+                'Content-Type': 'application/json',
+              },
+              body: raw,
+            });
+            res.statusCode = up.ok ? 200 : 404;
+            res.setHeader('Content-Type', 'application/json; charset=utf-8');
+            res.end(up.ok ? JSON.stringify({ ...(await up.json()), country: country ? country.toUpperCase() : null }) : 'Not Found');
+          } catch (_) {
+            res.statusCode = 404;
+            res.end('Not Found');
+          }
+          return;
+        }
+
         if (status === '404') {
           res.statusCode = 404;
           res.end('Not Found');
@@ -124,6 +151,8 @@ function mockOrderApi() {
         if (body.order_status === 'PARTIAL') {
           body.amount_owed = fixtureAmount('MOCK_AMOUNT_PARTIAL', body.amount_owed);
         }
+        body.banxa_url = 'https://checkout.banxa.com/?fiatType=USD&coinType=USDC&coinAmount='
+          + Math.max(body.amount_owed, 5).toFixed(2) + '&blockchain=BASE';
 
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json; charset=utf-8');
